@@ -53,7 +53,7 @@ async def action_1(call: CallbackQuery):
 async def action_1(call: CallbackQuery):
     await call.message.delete()
     await call.message.answer(
-        text(PRICES_L[2][0] + "\n" + messages.act_3 + "\n" + f"Стоимость услуги:  <b>{PRICES_L[2][1]}</b>"),
+        text(PRICES_L[2][0] + "\n" + messages.act_3 + "\n" + f"Стоимость услуги:  <b>{PRICES_L[2][1]}</b>" + "\n" + f"Стоимость услуги:  <b>12000</b> (с прогнозом на год по теме запроса)"),
         reply_markup=back_button)
     # await call.message.answer_video(video='', )
     await bot.answer_callback_query(call.id)
